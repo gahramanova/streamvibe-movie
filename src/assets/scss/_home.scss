@@ -1,0 +1,20 @@
+.herosection {
+   background-image: url("../img/homeherophoto.png");
+   height: 100vh;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.section-two {
+   background-color: #141414;
+   .watching {
+      background-color: #E50000;
+      color: white;
+   }
+}
+
+.section-three, .section-four {
+   background-color: #141414;
+}
