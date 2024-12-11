@@ -1,5 +1,11 @@
 import React from 'react'
-import heroPhoto from "../assets/img/homeherophoto.png"
+import smartphone from "../assets/img/smartphone.png"
+import tablets from "../assets/img/smartphone.png"
+import smarttv from "../assets/img/smartphone.png"
+import laptops from "../assets/img/smartphone.png"
+import gaming from "../assets/img/smartphone.png"
+import vrHeadsets from "../assets/img/vrHeadsets.png"
+import sectionBackground from "../assets/img/sectionBackground.png"
 
 const Home = () => {
   return (
@@ -26,21 +32,19 @@ const Home = () => {
           <div className='row g-4 py-3'>
             <div className='col-12 col-sm-6 col-md-3'>
               <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+
                 </div>
               </div>
             </div>
             <div className='col-12 col-sm-6 col-md-3'>
               <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+
                 </div>
               </div>
             </div>
@@ -54,64 +58,164 @@ const Home = () => {
           <h3 className='text-light'>We Provide you streaming experience across various devices.</h3>
           <span className='text-light'>With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.</span>
 
-          <div className='row g-4'>
+          <div className='row g-4 py-4'>
             <div className='col-12 col-sm-6 col-md-4'>
-            <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
+              <div className="card px-4 py-4">
+                <div className='d-flex justify-content-center align-items-center'>
+                  <div>
+                    <img src={smartphone} className="card-img-top" alt="..." />
+                  </div>
+                  <div>
+                    <h5 className="card-title text-light">Smartphones</h5>
+                  </div>
+                </div>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <p className="card-text text-light text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
                 </div>
               </div>
             </div>
             <div className='col-12 col-sm-6 col-md-4'>
-            <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
+              <div className="card px-4 py-4">
+                <div className='d-flex justify-content-center align-items-center'>
+                  <div>
+                    <img src={tablets} className="card-img-top" alt="..." />
+                  </div>
+                  <div>
+                    <h5 className="card-title text-light">Tablets</h5>
+                  </div>
+                </div>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <p className="card-text text-light text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
                 </div>
               </div>
             </div>
             <div className='col-12 col-sm-6 col-md-4'>
-            <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
+              <div className="card px-4 py-4">
+                <div className='d-flex justify-content-center align-items-center'>
+                  <div>
+                    <img src={smarttv} className="card-img-top" alt="..." />
+                  </div>
+                  <div>
+                    <h5 className="card-title text-light">Smart TV</h5>
+                  </div>
+                </div>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <p className="card-text text-light text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
                 </div>
               </div>
             </div>
             <div className='col-12 col-sm-6 col-md-4'>
-            <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
+              <div className="card px-4 py-4">
+                <div className='d-flex justify-content-center align-items-center'>
+                  <div>
+                    <img src={laptops} className="card-img-top" alt="..." />
+                  </div>
+                  <div>
+                    <h5 className="card-title text-light">Laptops</h5>
+                  </div>
+                </div>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <p className="card-text text-light text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
                 </div>
               </div>
             </div>
             <div className='col-12 col-sm-6 col-md-4'>
-            <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
+              <div className="card px-4 py-4">
+                <div className='d-flex justify-content-center align-items-center'>
+                  <div><img src={gaming} className="card-img-top" alt="..." /></div>
+                  <div><h5 className="card-title text-light">Gaming Consoles</h5></div>
+                </div>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <p className="card-text text-light text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
                 </div>
               </div>
             </div>
             <div className='col-12 col-sm-6 col-md-4'>
-            <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
+              <div className="card px-4 py-4">
+                <div className='d-flex justify-content-center align-items-center'>
+                  <div>
+                    <img src={vrHeadsets} className="card-img-top" alt="..." />
+                  </div>
+                  <div>
+                    <h5 className="card-title text-light">VR Headsets</h5>
+                  </div>
+                </div>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <p className="card-text text-light text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='section-five'>
+        <div className='container-fluid px-5'>
+          <h3 className='text-light m-0'>Frequently asked questions</h3>
+        </div>
+      </section>
+
+
+      <section className='section-six '>
+        <div className='container-fluid px-5'>
+          <h3 className='text-light m-0'>Choose the plan that's right for you </h3>
+          <span className='text-light'>Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</span>
+
+          <div className='row mt-3'>
+            <div className='col-12 col-sm-6 col-md-4 col-lg-4'>
+              <div className="card p-3">
+                <div className="card-body">
+                  <h4 className="card-title text-light">Basic Plan</h4>
+                  <p className="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h1 className='text-light'>$9.99</h1><p>/month</p>
+                  <button className="btn trial">Start Free Trial</button>
+                  <button className="btn plan mx-3">Choose Plan</button>
+                </div>
+              </div>
+            </div>
+            <div className='col-12 col-sm-6 col-md-4 col-lg-4'>
+              <div className="card p-3">
+                <div className="card-body">
+                  <h4 className="card-title text-light">Standart Plan</h4>
+                  <p className="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h1 className='text-light'>$12.99</h1><p>/month</p>
+                  <button className="btn trial ">Start Free Trial</button>
+                  <button className="btn plan mx-3">Choose Plan</button>
+                </div>
+              </div>
+            </div>
+            <div className='col-12 col-sm-6 col-md-4 col-lg-4'>
+              <div className="card p-3">
+                <div className="card-body">
+                  <h4 className="card-title text-light">Premium Plan</h4>
+                  <p className="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h1 className='text-light'>$14.99</h1><p>/month</p>
+                  <button className="btn trial">Start Free Trial</button>
+                  <button className="btn plan mx-3">Choose Plan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='section-seven'>
+        <div className='container-fluid px-5 '>
+          <div className='section-backgorund-part py-5'>
+            <img src={sectionBackground} style={{ width: "100%", height: "auto" }} />
+            <div className='container-fluid px-5 text'>
+              <div className='d-flex justify-content-between align-items-center'>
+                <div>
+                  <h2 className='text-light'>Start your free trial today</h2>
+                  <span>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</span>
+                </div>
+                <div>
+                  <button className='btn free-trial'>Start Free Trial</button>
                 </div>
               </div>
             </div>

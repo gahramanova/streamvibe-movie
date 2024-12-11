@@ -15,6 +15,78 @@
    }
 }
 
-.section-three, .section-four {
+.section-three {
    background-color: #141414;
 }
+
+.section-four {
+   background-color: #141414;
+
+   .card {
+      background: linear-gradient(to right top, #0f0f0f, #e50000 750%); 
+      img {
+         width: 50px;
+         height: 50px;
+         margin-right: 15px;
+      }
+   }
+}
+
+.section-five {
+   background-color: #141414;
+}
+
+.section-six {
+   background-color: #141414;
+   .card {
+      background-color: #1a1a1a;
+   }
+
+   .plan {
+      background-color: #E50000;
+      color: white;
+      border-radius: 10px;
+   }
+   .trial {
+      background-color: #141414;
+      border: 2px solid #262626;
+      border-radius: 10px;
+      color: white;
+   }
+
+}
+.section-seven {
+   background-color: #141414;
+ 
+   .section-backgorund-part {
+     position: relative;
+ 
+     img {
+       width: 100%;
+       height: auto;
+     }
+   }
+ 
+   .text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+
+     .free-trial {
+       background-color: #E50000;
+       color: white;
+       padding: 0.75rem 1.5rem;
+       border: none;
+       border-radius: 0.25rem;
+       cursor: pointer;
+ 
+       &:hover {
+         background-color: #c40000;
+       }
+     }
+   }
+ }
+ 
+ 
