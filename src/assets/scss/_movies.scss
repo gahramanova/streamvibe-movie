@@ -1,0 +1,89 @@
+.movies-section-one {
+    width: 100%;
+    height: 100px;
+    background-color: #141414;
+}
+.movies-section-two {
+    background-color: #141414;
+
+    .carousel-item {
+        position: relative;
+        overflow: hidden;
+
+        .carousel-main {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+       
+
+        .content {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            span {
+                color: #999999;
+            }
+
+            .play-now {
+                background-color: #e50000;
+                color: white;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .volume, .like {
+        background-color: #0f0f0f;
+        border: 1px solid #262626;
+    }
+}
+.carousel-indicators  [data-bs-target]{
+    background-color: #e50000 !important;
+}
+
+
+.movies-section-three, .movies-section-four, .movies-section-five {
+    background-color: #141414;
+
+}
+
+.movies-section-six {
+    background-color: #141414;
+  
+    .section-backgorund-part {
+      position: relative;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+ 
+      .free-trial {
+        background-color: #E50000;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #c40000;
+        }
+      }
+    }
+  }
