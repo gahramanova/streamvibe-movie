@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 import axios from "axios"
 import config from "../../config.js";
+import { Link } from 'react-router-dom';
+import slug from "slugify"
 
 const TVShows = () => {
 
@@ -73,11 +75,13 @@ const TVShows = () => {
                             {movies.map((item, index) => (
                                 <>
                                     <div className="card">
-                                    <img style={{ width:"100%", height:"300px", objectFit: "contain" }} src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title} />
+                                    <img style={{ width:"100%", height:"300px", objectFit: "contain" }} src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.name} />
                                         <div className="card-body">
                                             <h5 className="card-title text-light">{item.name.slice(0,20)}...</h5>
                                             <p className="card-text text-secondary">{item.overview.slice(0,50)}...</p>
-                                            <button className="btn about-movies">About Show</button>
+                                            <Link to={`/movies/${slug(item.name)}/${item.id}`}>
+                                                <button className="btn about-movies">About Movie</button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </>

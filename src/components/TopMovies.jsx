@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 import axios from "axios"
 import config from "../../config.js";
+import { Link } from 'react-router-dom';
+import slug from "slugify"
 
 const TopMovies = () => {
     const [movies, setMovies] = useState([]);
@@ -76,7 +78,9 @@ const TopMovies = () => {
                                         <div className="card-body">
                                             <h5 className="card-title text-light">{item.title.slice(0, 20)}...</h5>
                                             <p className="card-text text-secondary">{item.overview.slice(0, 50)}...</p>
-                                            <button className="btn about-movies">About Movie</button>
+                                            <Link to={`/movies/${slug(item.title)}/${item.id}`}>
+                                                <button className="btn about-movies">About Movie</button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </>
