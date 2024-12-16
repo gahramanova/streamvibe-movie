@@ -6,6 +6,7 @@ import laptops from "../assets/img/smartphone.png"
 import gaming from "../assets/img/smartphone.png"
 import vrHeadsets from "../assets/img/vrHeadsets.png"
 import sectionBackground from "../assets/img/sectionBackground.png"
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
           <div className="col-lg-6 mx-auto">
             <p className=" mb-4 text-light">StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" className="btn btn-lg px-4 watching" fdprocessedid="n0s3g">Start Watching Now</button>
+              <Link to={"/movies"}><button type="button" className="btn btn-lg px-4 watching" fdprocessedid="n0s3g">Start Watching Now</button></Link>
             </div>
           </div>
         </div>
