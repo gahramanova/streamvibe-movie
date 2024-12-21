@@ -10,7 +10,7 @@ const Support = () => {
       <section className='support-section-one'>
       </section>
 
-      <section className='support-section-two '>
+      <section className='support-section-two py-4'>
         <div className='container-fluid px-5'>
           <div className='row'>
             <div className='col-12 col-sm-5 col-md-5 col-lg-5'>

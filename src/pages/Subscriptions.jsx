@@ -9,7 +9,7 @@ const Subscriptions = () => {
 
       </section>
 
-      <section className='subsc-section-two py-3'>
+      <section className='subsc-section-two py-4'>
         <div className='container-fluid px-5'>
           <h3 className='text-light m-0'>Choose the plan that's right for you </h3>
           <span className='text-light'>Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</span>
