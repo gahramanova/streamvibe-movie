@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from "../assets/img/streamVibeLogo.png"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { IoIosSearch } from "react-icons/io";
 import { IoIosNotificationsOutline } from "react-icons/io";
 
@@ -16,10 +16,31 @@ const Header = () => {
             </a>
           </div>
           <ul className="nav col-12 col-sm-6 col-md-3 mb-2 justify-content-center mb-md-0 design">
-            <li><Link to="/" className="nav-link px-2 text-light">Home</Link></li>
-            <li><Link to="/movies" className="nav-link px-2 text-light">Movies</Link></li>
-            <li><Link to="/support" className="nav-link px-2 text-light">Support</Link></li>
-            <li><Link to="/subscriptions" className="nav-link px-2 text-light">Subscription</Link></li>
+
+            <NavLink to="/" className="nav-link px-2 text-light">
+            {({isActive})=> (
+            <li className={`${isActive ? 'active' : ''}`}>Home</li>
+
+            )}
+            </NavLink>
+            <NavLink to="/movies" className="nav-link px-2 text-light">
+            {({isActive}) => (
+              <li className={`${isActive ? 'active' : ''}`}>Movies</li>
+            )}
+            </NavLink>
+
+            <NavLink to="/support" className="nav-link px-2 text-light">
+            {({isActive}) => (
+              <li className={`${isActive ? 'active' : ''}`}>Support</li>
+            )}
+            </NavLink>
+            
+            <NavLink to="/subscriptions" className="nav-link px-2 text-light">
+            {({isActive}) => (
+              <li className={`${isActive ? 'active' : ''}`}>Subscription</li>
+            )}
+            
+            </NavLink>
 
           </ul>
           <div className="col-12 col-sm-6 col-md-3 text-end">
