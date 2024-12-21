@@ -6,6 +6,13 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 
 
 const Header = () => {
+
+  const scrollTop = () =>{
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
   return (
     <>
 
@@ -19,25 +26,25 @@ const Header = () => {
 
             <NavLink to="/" className="nav-link px-2 text-light">
             {({isActive})=> (
-            <li className={`${isActive ? 'active' : ''}`}>Home</li>
+            <li onClick={scrollTop} className={`${isActive ? 'active' : ''}`}>Home</li>
 
             )}
             </NavLink>
             <NavLink to="/movies" className="nav-link px-2 text-light">
             {({isActive}) => (
-              <li className={`${isActive ? 'active' : ''}`}>Movies</li>
+              <li onClick={scrollTop} className={`${isActive ? 'active' : ''}`}>Movies</li>
             )}
             </NavLink>
 
             <NavLink to="/support" className="nav-link px-2 text-light">
             {({isActive}) => (
-              <li className={`${isActive ? 'active' : ''}`}>Support</li>
+              <li onClick={scrollTop} className={`${isActive ? 'active' : ''}`}>Support</li>
             )}
             </NavLink>
             
             <NavLink to="/subscriptions" className="nav-link px-2 text-light">
             {({isActive}) => (
-              <li className={`${isActive ? 'active' : ''}`}>Subscription</li>
+              <li onClick={scrollTop} className={`${isActive ? 'active' : ''}`}>Subscription</li>
             )}
             
             </NavLink>
