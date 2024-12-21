@@ -17,6 +17,20 @@
 
 .section-three {
    background-color: #141414;
+   .card {
+      background-color: #1a1a1a;
+      border: 1px solid #262626;
+      border-radius: 10px;
+
+      .card-title {
+         color: white;
+      }
+
+      img {
+         width: 100%;
+         padding: 25px;
+      }
+   }
 }
 
 .section-four {

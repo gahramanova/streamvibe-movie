@@ -7,6 +7,12 @@ import gaming from "../assets/img/smartphone.png"
 import vrHeadsets from "../assets/img/vrHeadsets.png"
 import sectionBackground from "../assets/img/sectionBackground.png"
 import { Link } from 'react-router-dom'
+import action from "../assets/img/action.png"
+import adventure from "../assets/img/adventure.png"
+import comedy from "../assets/img/comedy.png"
+import drama from "../assets/img/drama.png"
+import { GoArrowRight } from "react-icons/go";
+import Faq from '../components/Faq'
 
 const Home = () => {
   return (
@@ -32,22 +38,56 @@ const Home = () => {
 
           <div className='row g-4 py-3'>
             <div className='col-12 col-sm-6 col-md-3'>
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             <Link to={"/movies"} style={{textDecoration: "none"}}>
+             <div className="card">
+              <img src={action} class="card-img-top" alt="..."/>
+                <div className="card-body d-flex justify-content-between align-items-center">
+                  <h5 className="card-title">Action</h5>
+                  <GoArrowRight style={{color: "white", width:"25px", height:"25px"}}/>
+
 
                 </div>
               </div>
+             </Link>
             </div>
             <div className='col-12 col-sm-6 col-md-3'>
+              <Link to={"/movies"} style={{textDecoration: "none"}}>
               <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src={adventure} class="card-img-top" alt="..."/>
+              <div className="card-body d-flex justify-content-between align-items-center">
+                  <h5 className="card-title">Adventure</h5>
+                  <GoArrowRight style={{color: "white", width:"25px", height:"25px"}}/>
+
 
                 </div>
               </div>
+              </Link>
+            </div>
+            <div className='col-12 col-sm-6 col-md-3'>
+           <Link to={"/movies"} style={{textDecoration: "none"}}>
+           <div className="card">
+              <img src={comedy} class="card-img-top" alt="..."/>
+              <div className="card-body d-flex justify-content-between align-items-center">
+                  <h5 className="card-title">Comedy</h5>
+                  <GoArrowRight style={{color: "white", width:"25px", height:"25px"}}/>
+
+
+                </div>
+              </div>
+           </Link>
+            </div>
+            <div className='col-12 col-sm-6 col-md-3'>
+              <Link to={"/movies"} style={{textDecoration: "none"}}>
+              <div className="card">
+              <img src={drama} class="card-img-top" alt="..."/>
+              <div className="card-body d-flex justify-content-between align-items-center">
+                  <h5 className="card-title">Drama</h5>
+                  <GoArrowRight style={{color: "white", width:"25px", height:"25px"}}/>
+
+
+                </div>
+              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -158,6 +198,7 @@ const Home = () => {
       <section className='section-five'>
         <div className='container-fluid px-5'>
           <h3 className='text-light m-0'>Frequently asked questions</h3>
+          <Faq/>
         </div>
       </section>
 

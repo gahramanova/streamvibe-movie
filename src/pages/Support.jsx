@@ -1,6 +1,7 @@
 import React from 'react'
 import supportPage from "../assets/img/supportPage.png"
 import sectionBackground from "../assets/img/sectionBackground.png"
+import Faq from '../components/Faq'
 
 
 const Support = () => {
@@ -88,6 +89,7 @@ const Support = () => {
       <section className='support-section-three'>
         <div className='container-fluid px-5'>
           <h3 className='text-light m-0'>Frequently asked questions</h3>
+          <Faq/>
         </div>
       </section>
        <section className='support-section-four'>
