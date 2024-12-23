@@ -6,6 +6,15 @@ import slug from "slugify";
 import { Link, useParams } from 'react-router-dom';
 
 const PopularMovies = () => {
+
+    const scrollTop = () =>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
+
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
@@ -77,7 +86,7 @@ const PopularMovies = () => {
                                         <div className="card-body">
                                             <h5 className="card-title text-light">{item.title.slice(0, 15)}...</h5>
                                             <p className="card-text text-secondary">{item.overview.slice(0, 50)}...</p>
-                                            <Link to={`/movies/${slug(item.title)}/${item.id}`}>
+                                            <Link onClick={scrollTop} to={`/movies/${slug(item.title)}/${item.id}`}>
                                                 <button className="btn about-movies">About Movie</button>
                                             </Link>
                                         </div>
