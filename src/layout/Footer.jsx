@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
+
+  const scrollTop = () =>{
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
   return (
     <>
       <footer>
@@ -17,19 +24,19 @@ const Footer = () => {
             <div className="col-12 col-sm-6 col-md-3 col-lg-3">
               <h5 className='text-light'>Section</h5>
               <ul className="nav flex-column">
-                <li className="nav-item mb-2"><Link to={"/"} className="nav-link p-0 text-light">Home</Link></li>
-                <li className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">Moives & Shows</Link></li>
-                <li className="nav-item mb-2"><Link to={"/subscriptions"} className="nav-link p-0 text-light">Subscriptions</Link></li>
-                <li className="nav-item mb-2"><Link to={"/support"} className="nav-link p-0 text-light">Support</Link></li>
+                <li onClick={scrollTop} className="nav-item mb-2"><Link to={"/"} className="nav-link p-0 text-light">Home</Link></li>
+                <li onClick={scrollTop} className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">Moives & Shows</Link></li>
+                <li onClick={scrollTop} className="nav-item mb-2"><Link to={"/subscriptions"} className="nav-link p-0 text-light">Subscriptions</Link></li>
+                <li onClick={scrollTop} className="nav-item mb-2"><Link to={"/support"} className="nav-link p-0 text-light">Support</Link></li>
               </ul>
             </div>
             <div className="col-12 col-sm-6 col-md-3 col-lg-3">
               <h5 className='text-light'>Section</h5>
               <ul className="nav flex-column">
-                <li className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">Gernes</Link></li>
-                <li className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">Trending</Link></li>
-                <li className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">New Release</Link></li>
-                <li className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">Popular</Link></li>
+                <li onClick={scrollTop} className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">Gernes</Link></li>
+                <li onClick={scrollTop} className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">Trending</Link></li>
+                <li onClick={scrollTop} className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">New Release</Link></li>
+                <li onClick={scrollTop} className="nav-item mb-2"><Link to={"/movies"} className="nav-link p-0 text-light">Popular</Link></li>
               </ul>
             </div>
           </div>

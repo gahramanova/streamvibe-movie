@@ -75,7 +75,7 @@ const PopularMovies = () => {
                                     <div className="card">
                                         <img style={{ width: "100%", height: "300px", objectFit: "contain" }} src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title} />
                                         <div className="card-body">
-                                            <h5 className="card-title text-light">{item.title.slice(0, 20)}...</h5>
+                                            <h5 className="card-title text-light">{item.title.slice(0, 15)}...</h5>
                                             <p className="card-text text-secondary">{item.overview.slice(0, 50)}...</p>
                                             <Link to={`/movies/${slug(item.title)}/${item.id}`}>
                                                 <button className="btn about-movies">About Movie</button>

@@ -18,9 +18,9 @@ const Header = () => {
 
         <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5">
           <div className="col-12 col-sm-6 col-md-3 mb-2 mb-md-0">
-            <a href="/" className="d-inline-flex link-body-emphasis text-decoration-none">
+            <Link onClick={scrollTop} to={"/"} className="d-inline-flex link-body-emphasis text-decoration-none">
              <img src={logo}/>
-            </a>
+            </Link>
           </div>
           <ul className="nav col-12 col-sm-6 col-md-3 mb-2 justify-content-center mb-md-0 design">
 
@@ -51,8 +51,8 @@ const Header = () => {
 
           </ul>
           <div className="col-12 col-sm-6 col-md-3 text-end">
-            <button type="button" className="btn me-2"><IoIosSearch style={{width: "30px", height:"30px"}}/></button>
-            <button type="button" className="btn "><IoIosNotificationsOutline style={{width: "30px", height:"30px"}}/></button>
+            <button type="button" className="btn me-2"><IoIosSearch style={{width: "30px", height:"30px", color:"white"}}/></button>
+            <button type="button" className="btn "><IoIosNotificationsOutline style={{width: "30px", height:"30px", color:"white"}}/></button>
           </div>
         </header>
 

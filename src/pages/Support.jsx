@@ -72,7 +72,7 @@ const Support = () => {
                         />
                       </div>
                     </div>
-                    <div className='col-12 col-sm-12 col-md-12'>
+                    <div className='col-12 col-sm-12 col-md-12 py-5'>
                       <textarea name='message' className="form-control text-secondary" maxLength="80" id="message" placeholder="Enter your message" ></textarea>
                     </div>
                   </div>
