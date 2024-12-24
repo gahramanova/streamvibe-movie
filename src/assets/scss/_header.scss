@@ -21,6 +21,15 @@
 }
 
 .header-two {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+
     .offcanvas {
         width: 100%;
     }
