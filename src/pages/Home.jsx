@@ -15,6 +15,13 @@ import { GoArrowRight } from "react-icons/go";
 import Faq from '../components/Faq'
 
 const Home = () => {
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
   return (
     <>
       <section className='herosection'> </section>
@@ -208,15 +215,17 @@ const Home = () => {
           <h3 className='text-light m-0'>Choose the plan that's right for you </h3>
           <span className='text-light'>Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</span>
 
-          <div className='row mt-3'>
+          <div className='row mt-3 g-4'>
             <div className='col-12 col-sm-6 col-md-4 col-lg-4'>
               <div className="card p-3">
                 <div className="card-body">
                   <h4 className="card-title text-light">Basic Plan</h4>
                   <p className="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <h1 className='text-light'>$9.99</h1><p>/month</p>
+                  <div>
                   <button className="btn trial">Start Free Trial</button>
-                  <button className="btn plan mx-3">Choose Plan</button>
+                  <Link onClick={scrollTop} to={"/subscriptions"} className="btn plan mx-3">Choose Plan</Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -227,7 +236,7 @@ const Home = () => {
                   <p className="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <h1 className='text-light'>$12.99</h1><p>/month</p>
                   <button className="btn trial ">Start Free Trial</button>
-                  <button className="btn plan mx-3">Choose Plan</button>
+                  <Link onClick={scrollTop} to={"/subscriptions"} className="btn plan mx-3">Choose Plan</Link>
                 </div>
               </div>
             </div>
@@ -238,7 +247,7 @@ const Home = () => {
                   <p className="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <h1 className='text-light'>$14.99</h1><p>/month</p>
                   <button className="btn trial">Start Free Trial</button>
-                  <button className="btn plan mx-3">Choose Plan</button>
+                  <Link onClick={scrollTop} to={"/subscriptions"} className="btn plan mx-3">Choose Plan</Link>
                 </div>
               </div>
             </div>
