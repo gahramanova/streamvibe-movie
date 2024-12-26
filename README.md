@@ -1,8 +1,33 @@
-# React + Vite
+Welcome to my Demo Movie Website! 
+This project showcases a dynamic and responsive platform where users can explore a variety of movies, search for their favorites, and view detailed information about each title.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌟 Features
+Dynamic Movie Listings: Real-time movie data fetched from the TMDB API.
+Responsive Design: Ensures an optimal viewing experience across all devices.
+Interactive UI: Includes movie search functionality and detailed information pages.
+Modern Styling: Attractive layouts and components styled with SCSS for a professional look and feel.
 
-Currently, two official plugins are available:
+🛠️ Technologies Used
+React: For building the user interface and managing the application state.
+Bootstrap: For the layout and responsive design.
+SCSS: For advanced styling and customizations.
+TMDB API: To fetch up-to-date movie data, including titles, descriptions, and images
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎯 Purpose
+This website was created as part of my frontend development internship to demonstrate my ability to integrate APIs, design engaging user interfaces, and build scalable, responsive web applications.
+
+📌 How It Works
+The movie page displays popular movies fetched from the TMDB API.
+Users can search for specific movies using the search bar.
+Clicking on a movie displays detailed information, including a description, release date, and poster.
+
+🚀 Future Enhancements
+Add user authentication for personalized movie recommendations.
+Implement a “Watchlist” feature for saving favorite movies.
+Integrate video trailers for an immersive user experience.
+
+📂 Setup and Installation
+Clone this repository: git clone https://github.com/gahramanova/demo-movie-website.git
+Install dependencies: bun install
+Start the development server: bun start
+
