@@ -12,6 +12,7 @@ Interactive UI: Includes movie search functionality and detailed information pag
 
 Modern Styling: Attractive layouts and components styled with SCSS for a professional look and feel.
 
+
 🛠️ Technologies Used
 
 React: For building the user interface and managing the application state.
@@ -22,8 +23,11 @@ SCSS: For advanced styling and customizations.
 
 TMDB API: To fetch up-to-date movie data, including titles, descriptions, and images
 
+
 🎯 Purpose
+
 This website was created as part of my frontend development internship to demonstrate my ability to integrate APIs, design engaging user interfaces, and build scalable, responsive web applications.
+
 
 📌 How It Works
 
@@ -33,6 +37,7 @@ Users can search for specific movies using the search bar.
 
 Clicking on a movie displays detailed information, including a description, release date, and poster.
 
+
 🚀 Future Enhancements
 
 Add user authentication for personalized movie recommendations.
@@ -40,6 +45,7 @@ Add user authentication for personalized movie recommendations.
 Implement a “Watchlist” feature for saving favorite movies.
 
 Integrate video trailers for an immersive user experience.
+
 
 📂 Setup and Installation
 
