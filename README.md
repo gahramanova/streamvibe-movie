@@ -27,7 +27,7 @@ Implement a “Watchlist” feature for saving favorite movies.
 Integrate video trailers for an immersive user experience.
 
 📂 Setup and Installation
-Clone this repository: git clone https://github.com/gahramanova/demo-movie-website.git
+Clone this repository: git clone https://github.com/gahramanova/intern-intelligence_streamvibe-movie.git
 Install dependencies: bun install
 Start the development server: bun start
 
