@@ -47,6 +47,7 @@ const Header = () => {
 
 
   const handleClose = ()=> setShow(false)
+  const handleShow = () => setShow(true)
 
 
   const scrollTop = () => {
@@ -139,7 +140,9 @@ const Header = () => {
                           <Link
 
                             onClick={() => {
-                              handleClose()
+                              const modalElement = document.getElementById('exampleModal');
+                              const modalInstance = window.bootstrap?.Modal.getInstance(modalElement);
+                              modalInstance?.hide();
                               setQuery("");
                               setSearchResults([])
 
