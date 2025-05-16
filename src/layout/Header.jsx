@@ -14,6 +14,7 @@ const Header = () => {
   const [search, setSearch] = useState([]);
   const [query, setQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const [show, setShow] = useState(false)
 
 
 
@@ -39,11 +40,13 @@ const Header = () => {
 
     const delayDebounce = setTimeout(() => {
       fetchSearchResults();
-    }, 500); // yazıdan 500ms sonra axtarış başlasın (debounce)
+    }, 100); // yazıdan 100ms sonra axtarış başlasın (debounce)
 
     return () => clearTimeout(delayDebounce);
   }, [query]);
 
+
+  const handleClose = ()=> setShow(false)
 
 
   const scrollTop = () => {
@@ -103,17 +106,11 @@ const Header = () => {
 
           </ul>
           <div className="col-12 col-sm-6 col-md-3 text-end">
-            <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <IoIosSearch style={{ width: "30px", height: "30px", color: "white" }} />
             </button>
             {/* Modal */}
-            <div
-              className="modal"
-              id="searchModal"
-              tabIndex={-1}
-              aria-labelledby="searchModalLabel"
-              aria-hidden="true"
-            >
+            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">
@@ -142,9 +139,7 @@ const Header = () => {
                           <Link
 
                             onClick={() => {
-                              const modalElement = document.getElementById('searchModal');
-                              const modalInstance = window.bootstrap?.Modal.getInstance(modalElement);
-                              modalInstance?.hide();
+                              handleClose()
                               setQuery("");
                               setSearchResults([])
 
