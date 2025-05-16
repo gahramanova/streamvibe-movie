@@ -11,8 +11,6 @@ import sectionBackground from "../assets/img/sectionBackground.png"
 const Movies = () => {
   return (
     <>
-      <section className='movies-section-one'>
-      </section>
       <section className='movies-section-two'>
         <div className='container-fluid px-5'>
           <div id="carouselExampleIndicators" className="carousel slide">
@@ -56,7 +54,7 @@ const Movies = () => {
         </div>
       </section>
 
-      <section className='movies-section-three'>
+      <section className='movies-section-three my-5'>
         <div className='container-fluid px-5 py-3'>
           <h3 className='text-light'>Popular Movies in Recent Times</h3>
           <PopularMovies/>
